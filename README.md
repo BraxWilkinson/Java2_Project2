@@ -45,9 +45,9 @@ Finds the character associated with the rounded Ascii average from calAverage().
 ### Private fields
 String[] sameStation - String array initialized with a length of 10
 
-char letter - A letter
+char letter - A letter to be used in LetterAvg
 
-int count - The count
+int count - The number of elements in the sameStations array
 
 ### Constructor - public LetterAvg(char letter)
 LetterAvg constructor, initializes with letter and numberOfStationWithLetterAvg reader method.
