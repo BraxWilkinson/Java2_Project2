@@ -21,7 +21,7 @@ public class LetterAvg {
 	
 	/**
 	 * LetterAvg constructor, initializes with letter and numberOfStationWithLetterAvg reader method.
-	 * @param letter
+	 * @param letter The letter associated with the Ascii average returned by calAverage
 	 */
 	public LetterAvg(char letter)
 	{
