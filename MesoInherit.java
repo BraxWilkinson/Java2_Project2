@@ -1,13 +1,24 @@
 
-public class MesoInherit{
+public class MesoInherit extends MesoAbstract{
 
+	/**
+	 * Station ID
+	 */
 	private String stid = "";
 	
-	public MesoInherit(MesoStation station) 
+	/**
+	 * MesoInherit constructor, initializes an object with stid 
+	 * @param station
+	 */
+	public MesoInherit(MesoStation station)
 	{
 		this.stid = station.getStID();
 	}
 	
+	/**
+	 * Calculates the Ascii average of the given station ID.
+	 * @return result An array of ints containing the floor, ceiling and rounded Ascii average.
+	 */
 	public int[] calAverage()
 	{
 		int[] result = new int[3];
@@ -22,7 +33,7 @@ public class MesoInherit{
 		result[1] = (int)Math.floor(charAvg);
 		
 		double decimalVal = charAvg - (int)charAvg;
-		if (decimalVal<.05) {
+		if (decimalVal<.5) {
 			result[2] = result[1];
 		} else {
 			result[2] = result[0];
@@ -30,6 +41,10 @@ public class MesoInherit{
 		return result;
 	}
 	
+	/**
+	 * Finds the character associated with the rounded Ascii average from calAverage().
+	 * @return result The character associated with the calAverage rounded result.
+	 */
 	public char letterAverage()
 	{
 		char result = (char)calAverage()[2];

@@ -4,10 +4,25 @@ import java.io.IOException;
 
 public class LetterAvg {
 	
+	/**
+	 * String array initialized with a length of 10
+	 */
 	String[] sameStations = new String[10];
+	
+	/**
+	 * A letter
+	 */
 	char letter;
+	
+	/**
+	 * The count
+	 */
 	int count;
 	
+	/**
+	 * LetterAvg constructor, initializes with letter and numberOfStationWithLetterAvg reader method.
+	 * @param letter
+	 */
 	public LetterAvg(char letter)
 	{
 		this.letter = letter;
@@ -19,6 +34,12 @@ public class LetterAvg {
 		}
 	}
 	
+	/**
+	 * Read Mesonet.txt and compare the first letter of the Station IDs to the given letter. 
+	 * If the letters are the same, add to the count and put the Station ID in the sameStation array.
+	 * @return count The number of stations that start with the given letter.
+	 * @throws IOException
+	 */
 	public int numberOfStationWithLetterAvg() throws IOException
 	{
 		BufferedReader rd = new BufferedReader(new FileReader("Mesonet.txt"));
@@ -42,6 +63,9 @@ public class LetterAvg {
 		return count;
 	}
 	
+	/**
+	 * Overrides the default toString. Prints the stations in the sameStations array.
+	 */
 	@Override
 	public String toString()
 	{

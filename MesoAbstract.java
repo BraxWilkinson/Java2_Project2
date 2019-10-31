@@ -1,12 +1,18 @@
 /**
- * @author Mohammad Mukhtaruzzaman
+ * @author Braxton Wilkinson
  * @version 2019-09-18
 */
 public abstract class MesoAbstract 
 {
-	//Abstract method calAverage to return integer array.
-	abstract int[] calAverage();
+	/**
+	 * Abstract method calAverage to return integer array.
+	 * @return
+	 */
+	public abstract int[] calAverage();
 
-	//TODO: Create an abstract method letterAverage with return type char
+	/**
+	 * Abstract method letterAverage to return char.
+	 * @return
+	 */
 	public abstract char letterAverage();
 }
