@@ -12,7 +12,7 @@ public abstract class MesoAbstract
 
 	/**
 	 * Abstract method letterAverage to return char.
-	 * @return
+	 * @return char The letter associated with the returned average
 	 */
 	public abstract char letterAverage();
 }
