@@ -10,7 +10,7 @@ public class LetterAvg {
 	String[] sameStations = new String[10];
 	
 	/**
-	 * A letter
+	 * A letter to be used in LetterAvg
 	 */
 	char letter;
 	
