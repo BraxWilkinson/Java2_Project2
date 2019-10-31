@@ -15,7 +15,7 @@ public class LetterAvg {
 	char letter;
 	
 	/**
-	 * The count
+	 * The number of elements in the sameStations array
 	 */
 	int count;
 	
